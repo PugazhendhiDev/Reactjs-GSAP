@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
-  gsap.registerPlugin(useGSAP);
-  useGSAP(() => {
-    gsap.from(".nav", { duration: 1, y: -500, stagger: 0.2 });
   
-  });
+  const [nav, setNav] = useState(false);
 
   return (
     <header className="bg-purple-300 z-[999] p-5 mb-4 rounded-2xl sticky top-0">
@@ -19,7 +13,10 @@ function Navbar() {
             Navbar
           </h1>
         </a>
-        <span className="nav my-auto mr-2 lg:hidden" onClick={() => setNav(!nav)}>
+        <span
+          className="nav my-auto mr-2 lg:hidden"
+          onClick={() => setNav(!nav)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

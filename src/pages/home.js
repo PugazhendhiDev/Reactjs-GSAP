@@ -1,14 +1,7 @@
 import MyImg from "../assets/MyImg/Pugazhendhi.jpeg";
 import "./styles/home.css";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 function Homepage() {
-  gsap.registerPlugin(useGSAP);
-  useGSAP(() => {
-    gsap.from(".homeIntro", { duration: 1, opacity: 0, delay: 2, stagger: 1 });
-  });
-
   return (
     <>
       <div className="homeIntro bg-purple-300 mx-auto p-5 text-center rounded-2xl">
