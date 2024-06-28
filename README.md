@@ -12,11 +12,11 @@ Package to be installed:
 - ``` gsap ```
 
 Packages to be imported:
+- gsap
 - NavLink
 - BrowserRouter
 - Routes
 - Route
-- gsap
 
 GSAP (GreenSock Animation Platform) installation command:
 - ``` npm install gsap ``` or visit "https://gsap.com/"
